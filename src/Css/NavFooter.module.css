@@ -1,0 +1,154 @@
+.nav {
+    /* border : solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 70vw;
+    margin: auto;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    padding-left: 20px;
+
+}
+
+.nav .right {
+    display: flex;
+    /* border: solid red; */
+    gap: 30px;
+
+    a {
+        color: rgb(168, 165, 165);
+    }
+}
+
+
+
+.footer {
+    /* border: solid red; */
+    padding: 10px;
+    padding-left: 200px;
+    text-align: center;
+    /* width: 70vw; */
+    margin: auto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+        letter-spacing: 3px;
+        font-weight: 500;
+        /* text-decoration: underline; */
+        margin-bottom: 10px;
+
+    }
+
+    .socialLinks {
+        /* border: solid red; */
+        width: fit-content;
+        display: flex;
+        gap: 25px;
+        width: 80%;
+        margin-left: 25px;
+
+        a:hover {
+            transform: scale(1.2);
+            transition: transform .3s;
+        }
+    }
+
+    .made{
+        width: 80%;
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+
+
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .nav {
+        width: 90vw;
+        font-size: 1rem;
+    }
+
+    .nav .right {
+        gap: 20px;
+    }
+
+    .footer {
+        padding-left: 100px;
+    }
+
+    .footer .socialLinks {
+        width: 90%;
+    }
+
+    .footer .made {
+        width: 90%;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .nav {
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .nav .right {
+        /* flex-direction: column; */
+        gap: 20px !important;
+        align-items: center;
+        margin-right: 30px
+    }
+
+    .footer {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .footer .socialLinks {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .footer .made {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .nav {
+        font-size: 0.9rem;
+    }
+
+    .nav .right {
+        gap: 5px;
+    }
+
+    .footer {
+        padding-left: 10px;
+        text-align: center;
+
+        .made{
+            /* border: solid red; */
+            margin-top: 10px;
+        }
+    }
+
+    .footer .socialLinks {
+        gap: 15px;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

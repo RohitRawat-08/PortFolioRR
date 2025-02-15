@@ -1,0 +1,31 @@
+.Layout{
+    /* border: solid red; */
+    height: fit-content;
+    /* width: 80vw; */
+    /* margin: auto; */
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    /* color: white; */
+}
+
+.MainContent{
+    /* border: solid red; */
+    min-height: 600px;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+}
+
+
+@media (max-width: 480px) {
+    .MainContent{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+}

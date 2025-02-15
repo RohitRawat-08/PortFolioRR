@@ -1,0 +1,161 @@
+.formContainer {
+  width: 850px;
+  /* border: solid red; */
+  /* margin: 50px auto; */
+  /* padding: 20px; */
+  /* background: #ffffff; */
+  background: #282D33;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h2 {
+  text-align: start;
+  font-size: 28px;
+  margin-bottom: 20px;
+  word-spacing: 3px !important;
+  letter-spacing: 2px !important;
+  /* border: solid red; */
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2px;
+  width: 100%;
+  /* border: solid red; */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #EE82EE;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+
+}
+
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #EE82EE;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contImage {
+  width: 300px !important;
+  height: 300px !important;
+  /* border: solid red ; */
+}
+
+
+input:focus{
+  border-width: 2px;
+  border-color: #EE82EE;
+  outline: #EE82EE !important;
+}
+textarea:focus {
+  border-width: 2px;
+  border-color: #EE82EE;
+  outline: #EE82EE !important;
+}
+
+.inputError {
+  border-color: red;
+}
+
+.errorText {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* border: solid red; */
+  width: 50%;
+}
+
+.contImage {
+  /* border: solid red; */
+  height: 300px;
+  width: 300px;
+}
+
+
+.submitBtn {
+  width: 100%;
+  padding: 10px;
+
+
+  /* background: #007bff; */
+  background: #BA55D3;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  /* background: #0056b3; */
+  background: #b529d8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .contImage{
+    display: none;
+  }
+
+ 
+
+  .formContainer{
+    width: 300px;
+    padding-left: 20px;
+    justify-content: start;
+    /* border: solid red; */
+  }
+
+  .formGroup{
+    /* border: solid green; */
+    width: 300px;
+  }
+  .input{
+    width: 300px !important;
+  }
+  .submitBtn {
+    width: 300px;
+
+  }
+}

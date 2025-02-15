@@ -1,0 +1,88 @@
+.ProjectCard{
+    border:  1px solid grey;
+    min-height: 390px;
+    height: fit-content;
+    width: 270px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    /* gap: 5px; */
+
+
+    .ProjectImage{
+        height: 160px;
+        /* border: solid red; */
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 95%;
+            width: 95%;
+            border-radius: 5px;
+        }
+    }
+
+    .techused{
+        border-bottom: solid grey;
+        /* height: 25%; */
+        padding: 5px;
+        padding-bottom: 10px;
+        letter-spacing: 3px;
+        font-weight: 500;
+        p{
+            color: lightgray;
+        }
+    }
+    .ProjectName{
+        /* border: solid red; */
+        min-height: 75px;
+        height: fit-content;
+        padding-top: 10px;
+        margin-top: 5px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+
+    }
+
+    .livebuttons{
+        /* border: solid red; */
+        margin: 20px 0px 20px 0px;
+        display: flex;
+        gap: 20px;
+        justify-content: start;
+        align-items: center;
+
+    }
+
+    .livebuttons a:first-child {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid grey;
+        background-color: grey;
+        border-radius: 6px;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .livebuttons a:first-child:hover {
+        border-color: transparent; 
+        box-shadow: inset 0 0 0 2px grey; 
+        background-color: #282D33;
+    }
+
+    .livebuttons a:last-child:hover {
+        transform: scale(1.2);
+        transition: transform .5s;
+    }
+
+}
+
+
+.ProjectCard:hover{
+    transform: scale(1.04) !important ;
+    transition: transform .5s ease-in-out !important;
+}

@@ -1,0 +1,459 @@
+
+.sideIcons{
+  /* border: solid red; */
+  position: fixed;
+  left: 20px;
+  top: -0px;
+  /* padding-top: 100px; */
+  /* z-index: 100; */
+  color: white !important;
+
+  .socialLinks{
+    display: flex;
+    flex-direction: column;
+    /* column-gap: 10px; */
+    color: white !important;
+    
+    a{
+      color: white !important;
+      margin-bottom: 10px;
+      /* border: solid red; */
+    }
+    .verLine{
+      /* border-left: 2px solid red; */
+      border-right: 2px solid #EE82EE;
+      width: 15px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      color: #EE82EE ;
+    }
+
+  }
+}
+
+
+.content {
+  /* border :solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-top: 80px;
+}
+
+
+.content .left {
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 80%;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  font-weight: 600;
+
+  p {
+    /* border: solid red; */
+    font-size: 20px;
+    font-family: "Inter", serif;
+    text-align: start;
+    margin-top: 10px;
+
+  }
+
+  div {
+    font-size: 40px;
+    text-align: start;
+    text-wrap: wrap;
+    font-family: "Inter", serif;
+    color: violet;
+    margin-top: 20px;
+
+  }
+
+  .subhead {
+    /* border: solid red; */
+    margin-top: 25px;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #bbbec4;
+  }
+
+}
+
+.content .image {
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  margin-right: 20px;
+
+  img {
+    height: 100%;
+    width: 180px;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+    transition: linear .5s;
+  }
+}
+
+
+
+
+
+
+.skills {
+  text-align: start;
+  margin-top: 100px;
+}
+
+.skills h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+}
+
+.skillContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skillSlider {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+.skillIcon {
+  padding: 10px;
+  height: 60px;
+}
+
+/* Skill Auto-Scroll Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+.Projects {
+  /* border: solid red; */
+  margin: 80px 0px 50px 0px;
+  text-align: start;
+  
+
+  h2 {
+    letter-spacing: 4px;
+    font-size: 28px;
+  }
+}
+
+.Projects .ProjectHead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  div {
+    display: flex;
+    cursor: pointer;
+ 
+    p {
+      /* border: solid red; */
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+      font-weight: 600;
+    }
+
+    img {
+      margin-left: 5px;
+      height: 35px;
+      position: relative;
+      bottom: 6px;
+    }
+
+  }
+}
+
+
+.Projects .projectcard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.About{
+  height: fit-content;
+  margin-bottom: 40px;
+  /* border: solid red; */
+
+  .AboutHead{
+    text-align: start;
+    letter-spacing: 3px;
+    h2{
+      font-size: 28px;
+    }
+  }
+
+  .AboutMe{
+    margin-top: 50px;
+    /* border: solid red; */
+    padding: 5px;
+    text-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 1.1rem;
+    gap: 20px;
+    font-weight: 600;
+    line-height: 30px;
+
+    p{
+      color: lightgray;
+      text-align:justify;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Small Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .content .left {
+    width: 100%;
+    align-items: start;
+    padding: 0 10px;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .content .left p{
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .content .left div {
+    font-size: 30px;
+  }
+
+  .content .left .subhead {
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .content .image {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .content .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .skills {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .Projects {
+    margin: 50px 0 30px 0;
+    text-align: center;
+  }
+
+  .Projects .ProjectHead {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .Projects .projectcard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .About {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .About .AboutMe {
+    font-size: 1rem;
+    padding: 0 10px;
+    gap: 15px;
+  }
+}
+
+/* Large Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+
+  .sideIcons{
+    display: none;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border: solid red; */
+    flex-direction: column-reverse;
+    margin-top: 20px;
+
+  }
+
+  .content .left {
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .content .left p{
+    /* border :solid red; */
+    width: 100%;
+    text-align: start;
+    justify-content: start;
+  }
+
+  .content .left div {
+    font-size: 35px;
+    /* border: solid red; */
+    font-size: 25px;
+  }
+
+  .content .left .subhead {
+    font-size: 1.2rem;
+    text-align: start;
+  }
+
+  .content .image {
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .content .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .skills {
+    text-align: center;
+    margin-top: 70px;
+
+    h2{
+      text-align: start;
+      margin-left: 30px;
+    }
+  }
+
+  .skillContainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(50%);
+    }
+  
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+
+  .Projects {
+    margin: 60px 0 40px 0;
+    text-align: center;
+    /* border: solid red; */
+  }
+  
+  
+
+
+  .Projects .ProjectHead {
+    flex-direction: row;
+    align-items: start;
+    /* justify-content: center; */
+    gap: 15px;
+    margin-left: 20px;
+    /* border: solid red; */
+
+    div{
+      margin-right: 10px;
+    }
+    div p{
+      /* border: solid red; */
+      font-size: 15px;
+      position: relative;
+      top: 10px;
+    }
+
+    div img{
+      height: 25px;
+      position: relative;
+      top: 10px;
+    }
+  }
+
+  .Projects .projectcard {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .About {
+    text-align: center;
+    margin-bottom: 40px;
+    /* border: solid red; */
+    margin-left: 15px;
+  }
+
+  .About .AboutMe {
+    font-size: 1.1rem;
+    /* padding: 0 15px; */
+    /* gap: 20px; */
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    p{
+      text-align: start;
+      font-size: 16px;
+
+    }
+  }
+}
