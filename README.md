@@ -31,8 +31,8 @@ This is my personal portfolio website built using **React.js** to showcase my sk
 ##  Contact
 Feel free to reach out:
 - **Email:** rsrawat2929.com
-- **GitHub:** [Your GitHub Profile](https://github.com/RohitRawat-08)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/rohit-singh-rawat-5540171b6/)
+- **GitHub:** [Click Here](https://github.com/RohitRawat-08)
+- **LinkedIn:** [Click Here](https://www.linkedin.com/in/rohit-singh-rawat-5540171b6/)
 
 ---
 ⭐ **Feel free to fork, star, or contribute!** 🚀
